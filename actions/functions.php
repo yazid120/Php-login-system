@@ -145,42 +145,6 @@ function logged_in(){
     }
 }
 
-//check if expired session font UsersSession expirade 
-function users_session_expired(){
-    $session_duration = 900;  
-    
-    if(isset($_SESSION["time_out_users"]) && isset($_SESSION["usersemail"])){
-        if( ((time() -3600*1) - $_SESSION["time_out_users"] > $session_duration)){
-        //logout user
-        return true; 
-        }
-       else{
-       //resset expire time 
-        return false;  
-    }
-    } 
-    
-}
-
-
-
-
-//Import PHPMailer classes into the global namespace
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
-//Contact format system functions
-
-
-function checkemptyinputs($name, $email, $subject, $you_are, $message){
-    if(!empty($name) && !empty($email) && !empty($subject) && !empty($you_are) &&
-    !empty($message)){
-        return true; 
-    }else{
-        return false; 
-    }
-}
 
 
 
