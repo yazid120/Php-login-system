@@ -11,6 +11,6 @@ Code: A sample of the code for building a login system using Php , mySqli in SQL
 ++ Procedural patern.
 
 # Get started 
-Install node js on your machine
-cd to root directory, type "npm install" for dependencies
-type "npm run dev" to start the server
+-Install node js on your machine
+-cd to root directory, type "npm install" for dependencies
+-type "npm run dev" to start the server
